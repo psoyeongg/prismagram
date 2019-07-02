@@ -6,11 +6,13 @@
   "author": "parksoyeong <psoyeongg@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.4.5",
     "@babel/node": "^7.4.5",
+    "dotenv": "^8.0.0",
     "graphql-yoga": "^1.18.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/preset-env": "^7.4.5",
     "nodemon": "^1.19.1"
   },
   "scripts": {
