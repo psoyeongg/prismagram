@@ -5,7 +5,6 @@ export default {
     Mutation: {
         confirmSecret: async(_, args) => {
             const { email, secret } = args;
-            console.log(email, secret);
             const user = await prisma.user({ email });
             if (user.loginSecret === secret) {
                 return generateToken(user.id);
